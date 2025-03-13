@@ -1,4 +1,7 @@
 package com.example.demo.repository;
 
-public interface LivroRepository {
+import jakarta.persistence.Id;
+import org.springframework.data.jpa.repository.JpaRepository;
+
+public interface LivroRepository extends JpaRepository<Long , Id> {
 }
